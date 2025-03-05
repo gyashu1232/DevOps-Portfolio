@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_HUB_CREDS = credentials('docker-hub-credentials')
-        DOCKER_IMAGE = 'yourusername/simple-ecommerce'
+        DOCKER_HUB_CREDS = credentials('docker-cred')
+        DOCKER_IMAGE = 'yashwanthreddy1232/simple-ecommerce'
         DOCKER_TAG = "${env.BUILD_NUMBER}"
     }
     
